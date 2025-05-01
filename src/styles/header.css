@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo p {
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+header .nav {
+    display: flex;
+    gap: 30px;
+
+}
+
+header .nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header .nav a:hover {
+    color: var(--secondary-color);
+
+}

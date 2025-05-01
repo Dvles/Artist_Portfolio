@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import SpotlightProjects from "../components/Spotlight-projects.astro";
+import "../styles/global.css";
+const pageTitle = "Home Page";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Petit+Formal+Script&display=swap"
+		/>
+	</head>
+	<body>
+		<Navigation />
+
+		<main role="main">
+			<section class="intro">
+			  <div class="text-content">
+				<h1>Compositeur / Ingé Son / Musicien</h1>
+				<p class="wide-text">
+				  Hello! Je suis un musicien multi-instrumentiste basé à Bruxelles. Formé à la musique à l'image et à la production à l'<a
+					href="https://www.imep.be/"
+					target="_blank"
+					rel="noopener noreferrer">IMEP</a>
+				  de Namur, je compose pour le cinéma, la télévision et les médias engagés.
+				  <span class="sr-only">Visite le site IMEP - s'ouvrira dans un nouvel onglet.</span>
+				</p>
+			  </div>
+			  <img class="img-right" src="https://res.cloudinary.com/dzqge7ico/image/upload/v1746104128/julien_delcroix_u5epie.gif" alt="Julien Delcroix">
+			</section>
+		  
+			<SpotlightProjects />
+		  </main>
+		  
+
+		<!-- Footer -->
+		<footer role="contentinfo">
+			<Footer />
+		</footer>
+	</body>
+</html>

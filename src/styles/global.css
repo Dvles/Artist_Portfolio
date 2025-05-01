@@ -1,0 +1,89 @@
+@import './header.css';
+
+:root {
+    --primary-color: #212121;  
+    --secondary-color: #6b6b6b; 
+    --third-color: #605e43;  
+    --background-color: #f9faea; 
+    --text-color: #333; 
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    font-family: "DM Sans", sans-serif; 
+    font-size: 16px;  
+    line-height: 1.5; 
+    margin: 0 auto;
+    width: 100%;
+    max-width: 95%;
+    padding: 1rem;
+    background-color: var(--background-color);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 2% !important;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.sr-only { 
+    display: none;
+
+}
+
+.wide-text {
+    font-size: 45px;
+    font-weight: bold;
+    line-height:49px;
+    letter-spacing: 1.8px;
+}
+
+.wide-text p a {
+    color: var(--third-color); 
+    text-decoration: underline;
+    text-decoration-color: var(--underline-color); 
+    text-decoration-thickness: 5px;
+}
+
+.wide-text p a:hover {
+    color: var(--secondary-color); 
+    text-decoration-color: var(--secondary-color);
+}
+
+
+.intro {
+height: 75vh;
+max-height: 75vh;
+/* background-color: rgba(0, 255, 255, 0.491); */
+}
+
+.text-content {
+    max-width: 90%; 
+}
+
+
+.img-right {
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 40%;
+    height: 80%;
+    object-fit: contain;
+    z-index: -4;
+    transition: filter 0.3s ease;
+    opacity: 0.8;
+
+}
