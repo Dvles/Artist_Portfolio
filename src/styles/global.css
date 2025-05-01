@@ -27,9 +27,18 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+h1,h2 {
     margin: 1rem 0;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    text-transform: uppercase;
+}
+
+h3{
+margin-top: 24px !important;
+}
+
+h4{
+    margin:0;
     text-transform: uppercase;
 }
 
@@ -45,7 +54,7 @@ main {
 }
 
 .wide-text {
-    font-size: 45px;
+    font-size: 48px;
     font-weight: bold;
     line-height:49px;
     letter-spacing: 1.8px;
@@ -64,7 +73,7 @@ main {
 }
 
 
-.intro {
+.intro{
 height: 75vh;
 max-height: 75vh;
 /* background-color: rgba(0, 255, 255, 0.491); */
@@ -87,3 +96,11 @@ max-height: 75vh;
     opacity: 0.8;
 
 }
+.contact {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 300px;           
+  }
+  
